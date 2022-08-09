@@ -1,0 +1,11 @@
+stages:
+  data_import:
+    cmd: >-
+      python -m src.data_import
+      ${data.path.raw}
+      ${data.path.interim}
+    deps:
+    - ${data.path.raw}
+    - src/data_import.py
+    outs:
+    - ${data.path.interim}
