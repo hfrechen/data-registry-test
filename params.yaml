@@ -1,4 +1,4 @@
 data:
   path:  
-    raw:  ./data/raw
-    interim:  ./data/interim
+    raw:  ./data/raw/
+    interim:  ./data/interim/

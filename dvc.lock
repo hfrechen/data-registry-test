@@ -1,9 +1,9 @@
 schema: '2.0'
 stages:
   data_import:
-    cmd: python -m src.data_import ./data/raw ./data/interim
+    cmd: python -m src.data_import ./data/raw/ ./data/interim/
     deps:
-    - path: ./data/raw
+    - path: ./data/raw/
       md5: 2cea9cf717b8df946e4745b59f9ad5d3.dir
       size: 70
       nfiles: 1
@@ -11,7 +11,7 @@ stages:
       md5: 6c84afcfa3d68aa1cfd31585cf23881d
       size: 709
     outs:
-    - path: ./data/interim
+    - path: ./data/interim/
       md5: 20715942639d5bcf5106346e614a646e.dir
       size: 86
       nfiles: 2
